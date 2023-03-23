@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Password generator</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+   <script src="https://kit.fontawesome.com/a2fa536777.js" crossorigin="anonymous">  
+   </script> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Password generator</h1>
+  </header>
+   <div class="container">
+     <div class="range-div">
+       <p id="range-output">Characters : 8</p>
+       <input type="range" id="char-limit" min="4" max="24" value="8" >
+     </div>
+     
+     <button id="generate-pass">Generate</button>
+     
+     <div class="show-pass-div">
+        <p id="pass-text"></p> 
+        <i id="copy-btn" class="fa-solid fa-clipboard"></i>
+     </div>
+   </div>
+    <!-- <span  class="copyDisplayMark">Copied to clipboard</span> -->
+  <script src="main.js"></script>
+</body>
+</html>

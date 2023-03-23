@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+} 
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --var-1: #79a3fc;
+  --var-2: #96ccf8;
+  --var-3: #8eceda;
+  --font-1: 'Lato','Ubuntu', sans-serif;
+}
+h1{
+  font-family: var(--font-1);
+  color: var(--var-1);
+  letter-spacing: 3px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  border: .5px solid var(--var-1);
+  border-radius: .5rem;
+  padding: .8rem;
+  border-bottom-width: 3px;
+  width: 265px;
+  margin: 3rem;
+}
+
+.container .range-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.container .range-div #range-output{
+  background-color: #ececf0;  
+  font-size: 1rem;
+  border-radius: .3rem;
+  padding: .5rem 0;
+  letter-spacing: 2px;
+}
+.container .range-div #char-limit{
+  -webkit-appearance: none;
+  background-color: var(--var-2);
+  border-radius: 1rem;
+  height: 10px;
+  margin: 1rem 0;
+  cursor: pointer;
+
+}
+
+.container #generate-pass{
+  border: .1px solid #000;
+  border-bottom-width: 5px;
+  border-radius: 5px;
+  background-color: var(--var-3);
+  padding: .5rem 0;
+  font-size: 1rem;
+  font-family: var(--font-1);
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: white;
+  cursor: pointer;
+  
+}
+.container .show-pass-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: .9rem;
+}
+.container .show-pass-div #pass-text{
+  background-color: #dad5d5;
+  padding:.5rem;
+  border-radius: .5rem;
+  border: 1px dashed #000;
+  margin-right: 10px;
+}
+.container  .show-pass-div #copy-btn{
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.container #generate-pass:hover,
+.container #generate-pass:active,
+.container .show-pass-div #copy-btn:hover,
+.container .show-pass-div #copy-btn:active{
+  opacity: 0.8;
+}
+
+.copyDisplayMark{
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  color: white;
+  background-color: #a3b8f1;
+  padding: .5rem 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  animation: popUp 3s  ease-in alternate 1;
+  transform:  translateX(-50%);
+
+}
+@keyframes popUp {
+  0%,100%{
+     bottom: -100%;
+     opacity: 0;
+  }
+  30%,80%{
+    bottom: 3rem;
+    opacity: 1;
+  }
+}
