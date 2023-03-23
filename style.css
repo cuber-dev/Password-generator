@@ -14,7 +14,7 @@ body {
 :root{
   --var-1: #79a3fc;
   --var-2: #96ccf8;
-  --var-3: #8eceda;
+  --var-3: #94A7DB;
   --font-1: 'Lato','Ubuntu', sans-serif;
 }
 h1{
@@ -79,7 +79,7 @@ h1{
   font-size: .9rem;
 }
 .container .show-pass-div #pass-text{
-  background-color: #dad5d5;
+  background-color: #EFEAEA;
   padding:.5rem;
   border-radius: .5rem;
   border: 1px dashed #000;
