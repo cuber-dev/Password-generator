@@ -115,7 +115,7 @@ h1{
      bottom: -100%;
      opacity: 0;
   }
-  30%,80%{
+  20%,80%{
     bottom: 3rem;
     opacity: 1;
   }
