@@ -7,7 +7,7 @@ const copyBtn = document.querySelector("#copy-btn");
 let charLimit = 8;
 let characters = "ABCDEFGHIJKLMOPQRSTUVWXYZabscdefghijklmnopqrstuvwxyz123456789!@#$%(_)/\|:^&*-?";
 
-range.addEventListener("change", changeCharLimitDisplay);
+range.addEventListener("input", changeCharLimitDisplay);
 generateBtn.addEventListener("click",generatePassword);
 copyBtn.addEventListener("click",copyPassword);
 
