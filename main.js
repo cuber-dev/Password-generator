@@ -5,7 +5,7 @@ const passDisplay = document.querySelector("#pass-text");
 const copyBtn = document.querySelector("#copy-btn");
 
 let charLimit = 8;
-let characters = "ABCDEFGHIJKLMOPQRSTUVWXYZabscdefghijklmnopqrstuvwxyz123456789!@#$%&_-?";
+let characters = "ABCDEFGHIJKLMOPQRSTUVWXYZabscdefghijklmnopqrstuvwxyz123456789!@#$%&_-";
 
 range.addEventListener("input", changeCharLimitDisplay);
 generateBtn.addEventListener("click",generatePassword);
