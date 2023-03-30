@@ -29,7 +29,7 @@ h1{
   border-radius: .5rem;
   padding: .8rem;
   border-bottom-width: 3px;
-  width: 265px;
+  width: 275px;
   margin: 3rem;
 }
 
@@ -115,7 +115,7 @@ h1{
      bottom: -100%;
      opacity: 0;
   }
-  20%,80%{
+  10%,80%{
     bottom: 3rem;
     opacity: 1;
   }

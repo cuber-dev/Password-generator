@@ -4,12 +4,13 @@ const generateBtn = document.querySelector("#generate-pass");
 const passDisplay = document.querySelector("#pass-text");
 const copyBtn = document.querySelector("#copy-btn");
 
-let charLimit = 8;
+let charLimit = range.value;
 let characters = "ABCDEFGHIJKLMOPQRSTUVWXYZabscdefghijklmnopqrstuvwxyz123456789!@#$%&_-";
 
 range.addEventListener("input", changeCharLimitDisplay);
 generateBtn.addEventListener("click",generatePassword);
 copyBtn.addEventListener("click",copyPassword);
+passDisplay.addEventListener('click',copyPassword);
 
 function changeCharLimitDisplay(){
     let limit = range.value;
@@ -26,13 +27,8 @@ function generatePassword(){
 }
 
 function copyPassword(){
-    const textArea = document.createElement("textarea");
-    textArea.value = passDisplay.innerText;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    textArea.remove();
-
+    navigator.clipboard.writeText(passDisplay.innerText);
+    
     const copyDisplayMark = document.createElement("span");
     copyDisplayMark.innerHTML = "Copied to Clipboard!";
     copyDisplayMark.classList.add("copyDisplayMark");
@@ -44,7 +40,4 @@ function copyPassword(){
     },3000);
 }
 
-
-window.addEventListener("load", () => {
-    generatePassword();
-})
+window.addEventListener("load",generatePassword)
